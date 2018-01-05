@@ -1,5 +1,5 @@
 max(X,Y):-
-X=Y
+X=Y,
 write('Both are equal')
 ;
 X>Y
