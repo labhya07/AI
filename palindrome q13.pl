@@ -1,5 +1,5 @@
 
-************** PROGRAM *************
+
 
 conc([],L,L).
 conc([X|Y],M,[X|N]):- conc(Y,M,N).
@@ -9,11 +9,3 @@ compare([],[]).
 compare([A|B],[C|D]):- A=C,compare(B,D).
 palindrome(L):- reverse1(L,R),compare(R,L).
 
-
-************** OUTPUT *************
-
-palindrome([a,b,c,d,d,c,b,a]).
-true.
-
-palindrome([a,b,b,c]).
-false.
